@@ -32,7 +32,6 @@ inputSubmit.addEventListener('click', function() {
     recipes.push(inputValue);
     list.innerHTML = renderRecipes(recipes);
     listItems = document.querySelectorAll('.list__item');
-    console.log(listItems);
 })
 
 
@@ -55,7 +54,7 @@ deleteButtons.forEach(button => {
     })
 })
 
-// functions
+// functions 
 
 function deleteRecipes(index) {
     recipes.splice(index, 1);
